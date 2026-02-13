@@ -1,0 +1,31 @@
+namespaces:
+  - ns1
+  - ns2
+  - ns3
+  - ns4
+
+apps:
+  - name: app1
+    namespace: ns1
+    image: nginx
+    port: 80
+
+  - name: app2
+    namespace: ns2
+    image: nginx
+    port: 80
+
+  - name: app3
+    namespace: ns3
+    image: nginx
+    port: 80
+
+  - name: app4
+    namespace: ns4
+    image: nginx
+    port: 80
+
+ingress:
+  enabled: true
+  className: nginx
+  host: example.com
